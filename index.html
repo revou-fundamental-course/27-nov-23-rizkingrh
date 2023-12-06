@@ -31,6 +31,7 @@
       <p>Hai Sobat, Selamat datang di Katik!<br>Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling dari bangun datar segitiga</p>
     </section>
 
+
     <section id="luas" class="luas">
       <div class="luas-heading">
         <h1>Kalkulator Luas Segitiga</h1>
@@ -48,12 +49,13 @@
       <div class="luas-footer">
         <h1>Hitung Luas Segitiga</h1>
         <form action="">
-          <input class="input" name="nilaiAlas" type="nilaiAlas" placeholder="Nilai Alas">
+          <input class="input" id="nilaiAlas" type="number" placeholder="Nilai Alas">
           <br>
-          <input class="input" name="nilaiTinggi" type="nilaiTinggi" placeholder="Nilai Tinggi">
-          <button type="submit" id="hitung">Hitung</button>
+          <input class="input" id="nilaiTinggi" type="number" placeholder="Nilai Tinggi">
+          <div id="output-luas"></div>
+          <button type="button" id="hitung" onclick="hitungLuas()">Hitung</button>
           <br>
-          <button type="submit" id="reset">Reset</button>
+          <button type="reset" id="reset" onclick="resetForm()">Reset</button>
         </form>
       </div>
     </section>
@@ -77,14 +79,15 @@
       <div class="keliling-footer">
         <h1>Hitung Keliling Segitiga</h1>
         <form action="">
-          <input class="input" name="nilaiS1" type="nilaiS1" placeholder="Nilai Sisi A">
+          <input class="input" id="nilaiS1" type="number" placeholder="Nilai Sisi A">
           <br>
-          <input class="input" name="nilaiS2" type="nilaiS2" placeholder="Nilai Sisi B">
+          <input class="input" id="nilaiS2" type="number" placeholder="Nilai Sisi B">
           <br>
-          <input class="input" name="nilaiS2" type="nilaiS2" placeholder="Nilai Sisi C">
-          <button type="submit" id="hitung">Hitung</button>
+          <input class="input" id="nilaiS3" type="number" placeholder="Nilai Sisi C">
+          <div id="output-keliling"></div>
+          <button type="button" id="hitung" onclick="hitungKeliling()">Hitung</button>
           <br>
-          <button type="submit" id="reset">Reset</button>
+          <button type="reset" id="reset" onclick="resetForm()">Reset</button>
         </form>
       </div>
     </section>

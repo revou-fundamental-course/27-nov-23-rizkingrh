@@ -19,6 +19,13 @@ body {
     font-family: 'Roboto', sans-serif;
     color: var(--font);
 }
+/* Menghilangkan arrow input */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 
 .navbar {
     display: flex;
@@ -125,12 +132,15 @@ body {
     width: 100%;
     padding: 1rem;
 }
+.luas .luas-footer #output-luas {
+    line-height: 2rem;
+}
 .luas .luas-footer #hitung {
     font-style: bold;
     background-color: #51a2ce;
     color: #ffffff;
     padding-block: 1rem;
-    margin-top: 2.5rem;
+    margin-top: 2rem;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -207,12 +217,15 @@ body {
     width: 100%;
     padding: 1rem;
 }
+.keliling .keliling-footer #output-keliling {
+    line-height: 2rem;
+}
 .keliling .keliling-footer #hitung {
     font-style: bold;
     background-color: #51a2ce;
     color: #ffffff;
     padding-block: 1rem;
-    margin-top: 2.5rem;
+    margin-top: 2rem;
     display: block;
     margin-left: auto;
     margin-right: auto;
