@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&family=Roboto:ital,wght@0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <title>Katik</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">Katik.</a>
+      <div class="navbar-nav">
+        <a href="#luas">Luas</a>
+        <a href="#keliling">Keliling</a>
+      </div>
+    </nav>
+
+    <section id="home" class="home">
+      <h1>Welcome to Katik!</h1>
+      <p>Hai Sobat, Selamat datang di Katik!<br>Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling dari bangun datar segitiga</p>
+    </section>
+
+    <section id="luas" class="luas">
+      <div class="luas-heading">
+        <h1>Kalkulator Luas Segitiga</h1>
+      </div>
+      <div class="luas-body">
+        <img src="assets/segitiga.jpg" alt="">
+        <p>Rumus Luas Segitiga yaitu :</p>
+        <p id="rumus">L = 1/2 x a x t</p>
+        <p>Di mana : 
+          <br>L = Luas
+          <br>a = Panjang Alas
+          <br>t = Tinggi
+        </p>
+      </div>
+      <div class="luas-footer">
+        <h1>Hitung Luas Segitiga</h1>
+        <form action="">
+          <input class="input" name="nilaiAlas" type="nilaiAlas" placeholder="Nilai Alas">
+          <br>
+          <input class="input" name="nilaiTinggi" type="nilaiTinggi" placeholder="Nilai Tinggi">
+          <button type="submit" id="hitung">Hitung</button>
+          <br>
+          <button type="submit" id="reset">Reset</button>
+        </form>
+      </div>
+    </section>
+
+
+    <section id="keliling" class="keliling">
+      <div class="keliling-heading">
+        <h1>Kalkulator Keliling Segitiga</h1>
+      </div>
+      <div class="keliling-body">
+        <img src="assets/segitiga.jpg" alt="">
+        <p>Rumus Keliling Segitiga yaitu :</p>
+        <p id="rumus">K = S1 + S2 + S3</p>
+        <p>Di mana : 
+          <br>K = Keliling
+          <br>S1 = Sisi A
+          <br>S2 = Sisi B
+          <br>S3 = Sisi C
+        </p>
+      </div>
+      <div class="keliling-footer">
+        <h1>Hitung Keliling Segitiga</h1>
+        <form action="">
+          <input class="input" name="nilaiS1" type="nilaiS1" placeholder="Nilai Sisi A">
+          <br>
+          <input class="input" name="nilaiS2" type="nilaiS2" placeholder="Nilai Sisi B">
+          <br>
+          <input class="input" name="nilaiS2" type="nilaiS2" placeholder="Nilai Sisi C">
+          <button type="submit" id="hitung">Hitung</button>
+          <br>
+          <button type="submit" id="reset">Reset</button>
+        </form>
+      </div>
+    </section>
+
+
+    <footer>
+      <h1>Katik.</h1>
+      <div>
+          <p>Terms of Service</p>
+          <p>Privacy Policy</p>
+      </div>
+      <div>
+          <p>© 2023</p>
+          <p>Katik</p>
+      </div>
+  </footer>
+
+
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
